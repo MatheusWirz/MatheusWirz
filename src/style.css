@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat Alternates';
+}
+a{
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color1: rgb(98, 14, 255);
+    --color2: rgb(204, 0, 255); 
+    --black: rgb(24, 24, 24); 
+}
+.purple{
+    color: var(--color1);
+}
+.purple2{
+    color: var(--color2);
+}
+
+
+.cont{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+}
+.black{
+    background-color: var(--black);
+    padding: 100px 40px;
+    color: white;
+    height: 100%;
+    text-align: left;
+}
+.welcome .black .first{
+    font-size: 50px;
+    font-weight: 700;
+}
+.welcome .black .sec{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.welcome .black .button{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: var(--black);
+}
+.welcome .black .button-sec{
+    font-size: 28px;
+    font-weight:700;
+    text-decoration: none;
+    padding:  10px 20px;
+    border-radius: 10px;
+}
+.button-sec:hover{
+    color: var(--black);
+    background-color: white;
+    transition: 0.5s;
+}
+.nomargin{
+    margin: 0;
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    padding: 100px 40px;
+    color: var(--black);
+    height: 100%;
+    text-align: center;
+}
+.welcome .white h1{
+    position: relative;
+    font-size: 40px;
+    top: 20px;
+}
+.welcome .white p{
+    font-family: 'Montserrat';
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+}
+.welcome .white img{
+    width:200px;
+}
+
+
+
+.rest h1{
+    font-size: 40px;
+}
+.rest .netflix{
+    margin: 60px 0;
+}
+.rest .netflix h2{
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-bottom: 3px solid rgb(196, 0, 0);
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+.rest .netflix img{
+    border: 3px solid rgb(51, 51, 51);
+    border-radius: 10px;
+}
+
+.rest .link{
+    color: var(--black);
+    font-size: 30px;
+    display: block;
+    padding: 20px 10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .welcome .white p{
+        max-width: 90%;
+    }
+    .cont{
+        max-width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 590px) {
+    .black{
+        padding: 100px 5px;
+    }
+    .welcome .black .first{
+        font-size: 35px;
+    }
+    .welcome .black .sec{
+        font-size: 30px;
+    }
+    .welcome .black .button{
+        font-size: 30px;
+    }
+    .welcome .black .button-sec{
+        font-size: 21px;
+    }
+    .white{
+        padding: 100px 5px;
+    }
+    .welcome .white h1{
+        font-size: 35px;
+    }
+    .welcome .white p{
+        font-family: 'Montserrat';
+        position: relative;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .welcome .white img{
+        width:200px;
+    }
+    .rest h1{
+        font-size: 35px;
+    }
+    .rest .netflix{
+        margin: 60px 0;
+    }
+    .rest .netflix h2{
+        font-size: 20px;
+    }
+    
+    .rest .link{
+        font-size: 20px;
+    }
+}
